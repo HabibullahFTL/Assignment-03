@@ -1,4 +1,5 @@
 // https://github.com/HabibullahFTL/Assignment-03
+
 // ============== Task - 01: Kilometer To Meter Converter ============== 
 function kilometerToMeter(kilometer) {
     var isNum = typeof kilometer;
@@ -21,29 +22,29 @@ function budgetCalculator(watch, phone, laptop) {
     var isLaptopCount = typeof laptop;
     var watchPrice, phonePrice, laptopPrice;
 
-    // Checking watch count validation & calculating
+    // Checking watch count validation & calculation
     if (isWatchCount == 'number' && watch > 0) {
         watchPrice = watch * 50;
     }else{
-        return "You have entered a wrong value 1";
+        return "You have entered a wrong value";
     }
 
-    // Checking phone count  validation & calculating
+    // Checking phone count  validation & calculation
     if (phone == undefined) {
         phonePrice = 0;
     }else if (isPhoneCount == 'number' && phone > 0) {
         phonePrice = phone * 50;
     }else{
-        return "You have entered a wrong value 2";
+        return "You have entered a wrong value";
     }
 
-    // Checking laptop count  validation & calculating
+    // Checking laptop count  validation & calculation
     if (laptop == undefined) {
         laptopPrice = 0;
     }else if (isLaptopCount == 'number' && laptop > 0) {
         laptopPrice = laptop * 50;
     }else{
-        return "You have entered a wrong value 3";
+        return "You have entered a wrong value";
     }
 
     return watchPrice + phonePrice + laptopPrice;
